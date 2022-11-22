@@ -1,0 +1,49 @@
+.bloco-criar {
+    
+    background-color: #297baa5e;
+    margin-top: 3%;
+    border-radius: 25px 2px 25px 2px;
+    padding-bottom: 30px;
+    -webkit-box-shadow: 9px 9px 96px -18px rgba(0, 0, 0, 0.88);
+    -moz-box-shadow: 9px 9px 96px -18px rgba(0, 0, 0, 0.88);
+    box-shadow: 9px 9px 96px -18px rgba(0, 0, 0, 0.88);
+}
+
+.bloco-criar h1 {
+    color: rgb(25, 22, 238);
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.bloco-input label {
+    color: rgb(25, 22, 238);
+    font-size: 19px;
+    margin-top: 10px;
+    align-self: center;
+    font-weight: bold;
+}
+
+#resp-aberta {
+	height: 60px;
+}	
+
+.btn-salvar {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    height: 50px;
+    font-size: 20px;
+    width: 50%;
+    background-color: rgb(25, 22, 238);
+    color: white;
+}
+
+
+
+.container-fluid {
+    background-image: url('https://media.istockphoto.com/vectors/abstract-https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fblue-web-background&psig=AOvVaw1jEu_MSC9eq5StzUkB5Cdh&ust=1669136928761000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCJChgtDhv_sCFQAAAAAdAAAAABAIblurred-colorful-background-vector-id1248542684?k=20&m=1248542684&s=612x612&w=0&h=1yKiRrtPhiqUJXS_yJDwMGVHVkYRk2pJX4PG3TT4ZYM=');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

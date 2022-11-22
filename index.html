@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <title>Aqui tem Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="validacoes.js"></script>
+</head>
+
+<body>
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="offset-md-3 col-md-6 bloco-criar">
+                    <h1>Criar Quiz</h1>
+                    <div class="alert alert-danger col-md-12" id="erro" hidden></div>
+                    <form id="form-criar" onsubmit="return false">
+                        <div class="bloco-input">
+                            <label class="form-label">Digite a pergunta:</label>
+                            <input type="text" class="form-control" name="pergunta" id="pergunta">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="bloco-input">
+                                        <label class="form-label">Tipo de Resposta</label>
+                                        <select class="form-control" id="resposta" name="resposta"
+                                            onchange="selecionarTipoDeResposta();">
+                                            <option value="">Tipo de Resposta....</option>
+                                            <option value="aberta">Resposta aberta</option>
+                                            <option value="multipla">Múltipla escolha</option>
+                                            <option value="dicotomica">Somente 2 escolhas</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="bloco-input-resp-aberta">
+                                    <div id="input-resposta" hidden>
+                                        <label class="form-label">Resposta aberta: </label>
+                                        <input type="text" class="form-control" name="resp-aberta" id="resp-aberta">
+                                    </div>
+                                    <div id="alt-a">
+                                        <label class="form-label">Alternativa a) : </label>
+                                        <input type="text" class="form-control" name="alt1" id="alt1">
+                                    </div>
+                                    <div id="alt-b">
+                                        <label class="form-label">Alternativa b) : </label>
+                                        <input type="text" class="form-control" name="alt2" id="alt2">
+                                    </div>
+                                    <div id="alt-c">
+                                        <label class="form-label">Alternativa c) : </label>
+                                        <input type="text" class="form-control" name="alt3" id="alt3">
+                                    </div>
+                                    <div id="alt-d">
+                                        <label class="form-label">Alternativa d) : </label>
+                                        <input type="text" class="form-control" name="alt4" id="alt4">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="offset-md-1 col-md-10">
+                                <button class="btn btn-dark col-md-12 btn-salvar"
+                                    onclick="validarCadastro();">Salvar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
