@@ -3,7 +3,16 @@ package br.com.ada.polotech.livraria.modelos;
 public class Jogo extends Produto {
     private String distribuidora, estudio;
 
-    public static int quantidadeDeJogos = 0;
+    private int quantidadeDeJogos = 0;
+
+    public int getQuantidadeDeJogos() {
+        return quantidadeDeJogos;
+    }
+
+    public void setQuantidadeDeJogos(int quantidadeDeJogos) {
+        this.quantidadeDeJogos = quantidadeDeJogos;
+    }
+
     public Jogo(String nomeDoProduto, Double precoDoProduto, String distribuidora, String estudio) {
         super(nomeDoProduto, precoDoProduto);
         this.distribuidora = distribuidora;
