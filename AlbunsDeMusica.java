@@ -3,7 +3,15 @@ package br.com.ada.polotech.livraria.modelos;
 public class AlbunsDeMusica extends Produto {
     private String musicosBandas, selos, genero;
 
-    public static int quantidadeDeAlbuns = 0;
+    private int quantidadeDeAlbuns = 0;
+
+    public int getQuantidadeDeAlbuns() {
+        return quantidadeDeAlbuns;
+    }
+
+    public void setQuantidadeDeAlbuns(int quantidadeDeAlbuns) {
+        this.quantidadeDeAlbuns = quantidadeDeAlbuns;
+    }
 
     public AlbunsDeMusica(String nomeDoProduto, Double precoDoProduto, String musicosBandas, String selos, String genero) {
         super(nomeDoProduto, precoDoProduto);
