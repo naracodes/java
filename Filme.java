@@ -1,9 +1,17 @@
 package br.com.ada.polotech.livraria.modelos;
 
 public class Filme extends Produto {
-    private String estudio, diretores, produtores, generos;
+    private String estudio, diretores, generos, produtores;
 
-    public static int quantidadeDeFilmes = 0;
+    private int quantidadeDeFilmes = 0;
+
+    public int getQuantidadeDeFilmes() {
+        return quantidadeDeFilmes;
+    }
+
+    public void setQuantidadeDeFilmes(int quantidadeDeFilmes) {
+        this.quantidadeDeFilmes = quantidadeDeFilmes;
+    }
 
     public Filme(String nomeDoProduto, Double precoDoProduto, String estudio, String diretores, String generos, String produtores) {
         super(nomeDoProduto, precoDoProduto);
@@ -29,20 +37,20 @@ public class Filme extends Produto {
         this.diretores = diretores;
     }
 
-    public String getProdutores() {
-        return produtores;
-    }
-
-    public void setProdutores(String produtores) {
-        this.produtores = produtores;
-    }
-
     public String getGeneros() {
         return generos;
     }
 
     public void setGeneros(String generos) {
         this.generos = generos;
+    }
+
+    public String getProdutores() {
+        return produtores;
+    }
+
+    public void setProdutores(String produtores) {
+        this.produtores = produtores;
     }
 
     @Override
