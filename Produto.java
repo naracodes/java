@@ -4,21 +4,14 @@ import java.util.Scanner;
 
 public abstract class Produto {
     private String nomeDoProduto;
-    public static Integer contador = 0;
-    private Integer idDoProduto;
+    private Integer idDoProduto, quantidade;
     private Double precoDoProduto;
 
-    private Integer quantidade;
-
-    public Integer getQuantidade() {
-        return quantidade;
-    }
-
-    public void setQuantidade(Integer quantidade) {
-        this.quantidade = quantidade;
-    }
-
     public static int quantidadeDeProdutosEmEstoque = 0;
+
+    public static int getQuantidadeDeProdutosEmEstoque() {
+        return quantidadeDeProdutosEmEstoque;
+    }
 
     public Produto(String nomeDoProduto, Double precoDoProduto){
         this.nomeDoProduto = nomeDoProduto;
@@ -31,6 +24,22 @@ public abstract class Produto {
 
     public void setNomeDoProduto(String nomeDoProduto) {
         this.nomeDoProduto = nomeDoProduto;
+    }
+
+    public Integer getIdDoProduto() {
+        return idDoProduto;
+    }
+
+    public void setIdDoProduto(Integer idDoProduto) {
+        this.idDoProduto = idDoProduto;
+    }
+
+    public Integer getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(Integer quantidade) {
+        this.quantidade = quantidade;
     }
 
     public double getPrecoDoProduto() {
@@ -49,29 +58,7 @@ public abstract class Produto {
         this.scanner = scanner;
     }
 
-    public Integer getIdDoProduto() {
-        return idDoProduto;
-    }
-
-    public void setIdDoProduto(Integer idDoProduto) {
-        this.idDoProduto = idDoProduto;
-    }
-
     Scanner scanner = new Scanner(System.in);
-
-
-    public void adicionar(){
-        System.out.println("Adicionei");
-    }
-    public void ver(){
-        System.out.println("Vi");
-    }
-    public void alterar(){
-        System.out.println("Alterei");
-    }
-    public void remover(){
-        System.out.println("Removi");
-    }
 
     @Override
     public String toString() {
